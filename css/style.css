@@ -57,6 +57,37 @@ body {
     color: #fff;
 }
 
+
+/* loading animation area start  */
+.loading-animation-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #000000bd;
+    position: fixed;
+    display: flex;
+    top: 0;
+    color: #fff;
+    align-items: center;
+    left: 0;
+    z-index: 999;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-animation-wrapper img {
+    width: 200px;
+}
+.loading-animation-wrapper h2{
+    font-weight: 800;
+    font-size: 32px;
+    color: #fff;
+}
+
+/* loading animation area end  */
+
+
+
+
 /*  header start  */
 .stickyHeader {
     position: fixed;
@@ -65,9 +96,11 @@ body {
     width: 100%;
     transition: .3s ease;
 }
-.stickyHeader .logo img{
+
+.stickyHeader .logo img {
     width: 100px;
 }
+
 .stickyHeader.active {
     top: 0px;
 }
@@ -405,7 +438,7 @@ body {
 }
 
 
-.loading-animation-wrapper {
+.skeleton-animation-wrapper {
     height: 100%;
     width: 100%;
     background-color: #fff;
@@ -414,12 +447,12 @@ body {
     left: 0;
 }
 
-.loading-animation-wrapper .element-wrapper {
+.skeleton-animation-wrapper .element-wrapper {
     display: flex;
     column-gap: 20px;
 }
 
-.loading-animation-wrapper .tab-element-wrapper {
+.skeleton-animation-wrapper .tab-element-wrapper {
     display: flex;
     column-gap: 20px;
     justify-content: space-evenly;
@@ -427,7 +460,7 @@ body {
     align-items: center;
 }
 
-.loading-animation-wrapper .tab-element-wrapper .element {
+.skeleton-animation-wrapper .tab-element-wrapper .element {
     max-width: 200px;
     width: 100%;
     height: 30px;
@@ -435,14 +468,14 @@ body {
     position: relative;
 }
 
-.loading-animation-wrapper hr {
+.skeleton-animation-wrapper hr {
     opacity: 1;
     margin: 0;
     background-color: #dfdfdf;
     height: 2px;
 }
 
-.loading-animation-wrapper .element-wrapper .element {
+.skeleton-animation-wrapper .element-wrapper .element {
     max-width: 70px;
     width: 100%;
     height: 25px;

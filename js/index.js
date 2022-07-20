@@ -30,12 +30,15 @@ $(document).ready(function () {
 
 
     //bar script start
-    let bar = document.querySelector('.bar');
+    let bar = document.querySelectorAll('.bar');
     let navigation = document.querySelector('.navigation');
+    bar.forEach(function (b) {
+        b.onclick = function () {
+            b.previousElementSibling.classList.toggle('active');
+            // console.log(b.closest('.navigation'));
+        }
+    })
 
-    bar.onclick = function () {
-        navigation.classList.toggle('active')
-    }
 
     //bar script end
 
@@ -53,14 +56,14 @@ $(document).ready(function () {
 
 
 
-    // animation area start 
-    const animationWrappper = document.querySelector('.loading-animation-wrapper')
+    // skeleton animation area start 
+    const animationWrappper = document.querySelector('.skeleton-animation-wrapper')
     const tabsWrapper = document.querySelector('#banner-area .tabs-wrapper')
 
     if (tabsWrapper.clientWidth > 0) {
         animationWrappper.classList.add('d-none')
     }
-    // animation area end 
+    //skeleton  animation area end 
 
 
 
@@ -76,6 +79,15 @@ $(document).ready(function () {
         }
     }
     // sticky header script end 
+
+
+    //loading animation area start 
+    const loadingWrpr = document.querySelector('.loading-animation-wrapper');
+    const RechercherBtn = document.querySelector('.Rechercher-btn ');
+    RechercherBtn.onclick = function () {
+        loadingWrpr.classList.remove('d-none')
+    }
+    //loading animation area end
 
 
 
