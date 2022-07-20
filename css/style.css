@@ -50,9 +50,11 @@ body {
     font-weight: 700;
     color: #fff;
 }
-.commmon-btn:hover{
+
+.commmon-btn:hover {
     color: #fff;
 }
+
 /*  header start  */
 #header .top-header {
     background-color: #ffe6aa;
@@ -292,7 +294,34 @@ body {
 
 .hiver-element li .bordered-links {
     border-radius: 6px;
+
+}
+
+.hiver-element li .bordered-links a {
     border: 1px solid #000;
+}
+
+.hiver-element li .bordered-links a:first-child {
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-right: none;
+}
+
+.hiver-element li .bordered-links a:last-child {
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-left: none;
+}
+
+.bordered-links a.active {
+    background-color: var(--secondary);
+    color: #fff;
+    border-color: var(--secondary) !important;
+}
+
+.bordered-links .active:hover {
+    background-color: var(--secondary);
+    color: #fff !important;
 }
 
 .bordered-links a {

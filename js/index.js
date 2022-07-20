@@ -41,5 +41,18 @@ $(document).ready(function () {
 
 
 
+    // colored box ara start 
+    const borderLink = document.querySelectorAll('.bordered-links a')
+    borderLink.forEach(function(a){
+        a.onclick= function(e){
+            e.preventDefault()
+            a.classList.toggle('active')
+        }
+    })
+
+    // colored box ara end 
+
+
+
 
 })
