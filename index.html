@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- css links  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- heaer section start  -->
+    <header id="header">
+        <div class="top-header">
+            <div class="container">
+                <div class="wrapper">
+                    <img src="./images/icons/mike-icon.png" alt="mike icons">
+                    <p>Promos d'été : jusq'à -20% sur votre séjour</p>
+                    <button class="btn profite-btn">J'en profite <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="middle-header p-3">
+            <div class="container gap-3 d-flex justify-content-between flex-wrap">
+                <aside class="logo-area">
+                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                </aside>
+                <aside class="aside-right">
+                    <select class="form-select" name="" id="">
+                        <option value="Fr" selected>FR</option>
+                        <option value="eng">ENG</option>
+                    </select>
+                    <div>
+                        <a href="#">
+                            <img src="./images/icons/faq-icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="d-flex mobile-icon-wrapper">
+
+                        <div class="d-flex align-items-center p-1">
+                            <img class="mobile-icon" src="./images/icons/mobile-icon.png" alt="">
+                        </div>
+                        <div class="">
+                            <a href="#">
+                                <h6>04 92 12 65 30</h6>
+                                <p>Lundi-Vendredi : 9h-19h Samedi : 9h-18h</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="profile-wrapper ">
+                        <a href="#" class="d-flex flex-column align-items-center">
+                            <img src="./images/icons/user-icon.png" alt="">
+                            <p>Mon compte</p>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+        <div class="bottom-header">
+            <div class="container">
+                <ul class="navigation ">
+                    <li class="dropdown"><span>Nos Stations</span> <i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><span>Résidences Club </span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><span>Villages Club</span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Chalets</a></li>
+                    <li><a href="">Notre concept</a></li>
+                    <li class="dropdown"><span>Idées séjours</span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Promotions</a></li>
+                </ul>
+                <div class="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- heaer section end  -->
+
+    <!-- banner area start -->
+    <section id="banner-area">
+        <div class="container">
+            <div class="tabs-wrapper">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                            aria-selected="true">Hiver</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">été</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+                        tabindex="0">
+                        <ul class="hiver-element">
+                            <li class="d-flex align-items-center"><img src="./images/icons/location-icon.png" alt=""><a
+                                    href="#">Où allez-vous ? <i class="fas fa-chevron-down"></i></a></li>
+                            <li class="d-flex align-items-center"><img src="./images/icons/calendar-icon.png" alt=""><a
+                                    href="#">Quand ? <i class="fas fa-chevron-down"></i></a></li>
+                            <li class="d-flex align-items-center"><img src="./images/icons/double-user-icon.png"
+                                    alt=""><a href="#">Combien de vacanciers ?<i class="fas fa-chevron-down"></i></a>
+                            </li>
+                            <li class="d-flex">
+                                <div class="d-flex bordered-links align-items-center">
+                                    <a href="#">Résidences Club</a>
+                                    <a href="#">Villages Club</a>
+                                    <a href="#">Chalets</a>
+                                </div>
+                                <button class="Rechercher-btn btn">Rechercher <i
+                                        class="fas fa-chevron-right"></i></button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">...</div>
+                </div>
+            </div>
+
+            <div class="check-mark-area">
+                <ul>
+                    <li><img src="./images/icons/check.png" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li><img src="./images/icons/check.png" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li><img src="./images/icons/check.png" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li><img src="./images/icons/check.png" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                    <li><img src="./images/icons/check.png" alt="">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- banner area end -->
+
+    <!-- 20 club slider area start  -->
+    <section id="ClubSliderArea">
+        <div class="container">
+            <div class="carousel-wrapper">
+                <h2><span class="mmv-text">20 clubs MMV</span> lequel sera votre préféré ?</h2>
+                <div class="owl-carousel">
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image1.png" alt="">
+                        <div class="card-body">
+                            <h1>Alpe d'Huez</h1>
+                            <h2>Les Bergers</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>624€ / pers. en pension complète</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image2.png" alt="">
+                        <div class="card-body">
+                            <h1>Arc 2000</h1>
+                            <h2>Altitude</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>483€ / appartement</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image3.png" alt="">
+                        <div class="card-body">
+                            <h1>Montgenèvre</h1>
+                            <h2>Le Hameau des airelles</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>378€ / appartement</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image4.png" alt="">
+                        <div class="card-body">
+                            <h1>Sainte Foy Tarentaise</h1>
+                            <h2>L'Etoile des Cimes</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>740€ / pers. en pension complète</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image1.png" alt="">
+                        <div class="card-body">
+                            <h1>Alpe d'Huez</h1>
+                            <h2>Les Bergers</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>624€ / pers. en pension complète</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image2.png" alt="">
+                        <div class="card-body">
+                            <h1>Arc 2000</h1>
+                            <h2>Altitude</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>483€ / appartement</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image3.png" alt="">
+                        <div class="card-body">
+                            <h1>Montgenèvre</h1>
+                            <h2>Le Hameau des airelles</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>378€ / appartement</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img class="card-image" src="./images/home/slider-image4.png" alt="">
+                        <div class="card-body">
+                            <h1>Sainte Foy Tarentaise</h1>
+                            <h2>L'Etoile des Cimes</h2>
+                            <div class="d-flex mb-2 align-items-center gap-2">
+                                <h4 class="rating-name">Village Club</h4>
+                                <div>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>Votre semaine à partir de</p>
+                            <b>740€ / pers. en pension complète</b>
+                            <div class="d-flex bottom-part mt-3 align-items-center">
+                                <div class="bottom-rating me-2">
+                                    <p> 8,1</p>
+                                </div>
+                                <h4>EXCELLENT</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 20 club slider area end  -->
+
+
+    <!-- lesprit club slider area start  -->
+    <section id="lespritClub">
+        <img class="lesprit-Club-bg-image" src="./images/home/lesprit-club-bg.png" alt="">
+        <div class="container">
+            <h1 class="title">L'esprit Club MMV</h1>
+            <h2>une montagne d'émotions !</h2>
+            <div class="lesprit-image-wrapper">
+                <div class="lesprit-image">
+                    <h4>Chambres & appartements</h4>
+                    <img src="./images/home/lesprit-club-image1.png" alt="">
+                    <p>En Résidence Club, c’est vous qui décidez ! Nous avons imaginé les Résidences Club mmv comme le
+                        cadre rêvé de vos vacances !</p>
+                </div>
+                <div class="lesprit-image">
+                    <h4>Enfants & Ados</h4>
+                    <img src="./images/home/lesprit-club-image2.png" alt="">
+                    <p>Les éclats de rire pour vos enfants et la tranquillité pour vous, c'est le programme des Clubs
+                        Enfants mmv dédiés À chaque tranche d'âge.</p>
+                </div>
+                <div class="lesprit-image">
+                    <h4>Bien-être & Spa</h4>
+                    <img src="./images/home/lesprit-club-image3.png" alt="">
+                    <p>MMV vous propose des séjour bien-être en hôtel ou en village club avec spa et espaces détente,
+                        pour que vos vacances riment avec détente. </p>
+                </div>
+                <div class="lesprit-image">
+                    <h4>Restaurants & bars</h4>
+                    <img src="./images/home/lesprit-club-image4.png" alt="">
+                    <p>Découvrez les recettes du chef Cédric Campanella dans nos Hôtels Clubs. En Résidences Club, optez
+                        pour nos formules petits déjeuners ou le service. </p>
+                </div>
+                <div class="lesprit-image">
+                    <h4>Animations & spectacles</h4>
+                    <img src="./images/home/lesprit-club-image5.png" alt="">
+                    <p>Rire, danser, se rencontrer... La réussite de vos vacances Club repose aussi sur ces moments
+                        privilégiés de partage et de légèreté.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- lesprit club slider area end  -->
+
+    <!-- Les promotions area start  -->
+    <section id="lesPromotionarea">
+        <div class="container">
+            <h2 class="title">Les promotions</h2>
+            <div class="promotion-image-wrapper">
+                <div class="promotion-image">
+                    <h4>Dernières Minutes : jusqu’à -20%</h4>
+                    <img src="./images/home/le-promotion-image1.png" alt="">
+                    <div class="hidden-area">
+                        <button class="btn commmon-btn ">Voir nos brochures <i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="promotion-image">
+                    <h4>Promos d’été : jusqu’à -20%</h4>
+                    <img src="./images/home/le-promotion-image2.png" alt="">
+                    <div class="hidden-area">
+                        <button class="btn commmon-btn ">Voir nos brochures <i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="promotion-image">
+                    <img src="./images/home/le-promotion-image3.png" alt="">
+                    <div class="hidden-area">
+                        <button class="btn commmon-btn">Voir nos brochures <i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="promotion-image">
+                    <h4>Simpli’Cimes : à partir de 89€ / jour / pers. copie</h4>
+                    <img src="./images/home/le-promotion-image4.png" alt="">
+                    <div class="hidden-area">
+                        <button class="btn commmon-btn ">Voir nos brochures <i
+                                class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+            <button class="btn commmon-btn mt-5">Voir toutes les promos <i class="fas fa-chevron-right"></i></button>
+
+
+        </div>
+    </section>
+    <!-- Les promotions area end   -->
+
+    <!-- email are start  -->
+    <section id="emailArea">
+        <div class="container">
+            <div class="email-area-wrapper ">
+                <div class="d-flex align-items-center">
+                    <h2 class="title">100€</h2>
+                    <h4>de réduction sur votre 1er séjour</h4>
+                </div>
+                <div class="email-input-wrapper">
+                    <input type="email" placeholder="Votre e-mail">
+                    <button class="btn commmon-btn ms-4">J’en profite <i class="fas fa-chevron-right"></i></button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- email are end -->
+
+    <!-- Vos souvenirs chez MMV area start  -->
+    <section id="souvenirsArea">
+        <div class="container">
+            <h2 class="title">Vos souvenirs chez MMV</h2>
+            <div class="gallery-wrapper owl-carousel">
+                <div class="gallery">
+                    <img src="./images/home/carousel/1.jpg" alt="">
+                    <img src="./images/home/carousel/2.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/3.jpg" alt="">
+                    <img src="./images/home/carousel/4.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/5.jpg" alt="">
+                    <img src="./images/home/carousel/6.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/7.jpg" alt="">
+                    <img src="./images/home/carousel/8.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/1.jpg" alt="">
+                    <img src="./images/home/carousel/2.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/3.jpg" alt="">
+                    <img src="./images/home/carousel/4.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/5.jpg" alt="">
+                    <img src="./images/home/carousel/6.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/7.jpg" alt="">
+                    <img src="./images/home/carousel/8.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/1.jpg" alt="">
+                    <img src="./images/home/carousel/2.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/3.jpg" alt="">
+                    <img src="./images/home/carousel/4.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/5.jpg" alt="">
+                    <img src="./images/home/carousel/6.jpg" alt="">
+                </div>
+                <div class="gallery">
+                    <img src="./images/home/carousel/7.jpg" alt="">
+                    <img src="./images/home/carousel/8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Vos souvenirs chez MMV area end  -->
+
+    <!-- footer area start  -->
+    <footer>
+        <div class="container">
+            <div class="footer-contents-wrapper">
+                <div class="d-flex justify-content-between gap-3 flex-wrap align-items-center">
+                    <div class="d-flex flex-wrap justify-content-around">
+                        <h2 class="title me-3">93,8%</h2>
+                        <div class="d-flex flex-column">
+                            <b>de nos clients ont adoré leur séjour chez nous</b>
+                            <p>Source : Note de satisfaction (31 050 clients)</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h6>Contactez votre expert MMV</h6>
+                        <p><img src="./images/icons/mobile-icon.png" alt=""><b>04 92 12 65 30</b></p>
+                    </div>
+                    <div>
+                        <p>Lun. - Ven. : 9h-19h -Samedi : 9h -18h</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div class="social-media-wrapper">
+                        <ul class="d-flex ">
+                            <li><a href="#"><img src="./images/icons/facebook.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icons/instagram.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icons/linkedin.png" alt=""></a></li>
+                            <li><a href="#"><img src="./images/icons/tripadvisor.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <select class="form-select" name="" id="">
+                            <option value="">Nos autres site</option>
+                            <option value="">Nos autres site2</option>
+                            <option value="">Nos autres site3</option>
+                            <option value="">Nos autres site4</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-select" name="" id="">
+                            <option value="" selected>Fr</option>
+                            <option value="">Eng</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end  -->
+
+
+
+
+    <!-- js links  -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
