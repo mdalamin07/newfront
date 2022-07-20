@@ -610,7 +610,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(0 0 0 / 80%);
+    background: rgb(0 0 0 / 31%);
     border-radius: 12px;
     transition: all .4s;
     visibility: hidden;
