@@ -14,7 +14,7 @@
     --primary: #006f77;
     --secondary: #ff622c;
     --greenlight:#9cdbbe;
-    --grey:var(--grey);
+    --grey:var(--#dbdbdb);
 }
 
 p {
