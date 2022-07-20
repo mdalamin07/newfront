@@ -13,6 +13,8 @@
 :root {
     --primary: #006f77;
     --secondary: #ff622c;
+    --greenlight:#9cdbbe;
+    --grey:var(--grey);
 }
 
 p {
@@ -231,7 +233,7 @@ body {
 }
 
 .tabs-wrapper .nav-tabs {
-    border-bottom: 1px solid #dbdbdb;
+    border-bottom: 1px solid var(--grey);
 }
 
 .nav-tabs .nav-link {
@@ -239,13 +241,13 @@ body {
     font-weight: bold;
     color: #000;
     font-size: 18px;
-    border-bottom: 7px solid #dbdbdb;
+    border-bottom: 7px solid var(--grey);
 }
 
 .nav-tabs .nav-link.active {
     border: none;
     color: #000;
-    border-bottom: 7px solid #9cdbbe;
+    border-bottom: 7px solid var(--greenlight);
 
 }
 
@@ -268,7 +270,7 @@ body {
 }
 
 .tab-content .hiver-element li {
-    border-right: 1px solid #dbdbdb;
+    border-right: 1px solid var(--grey);
     display: block;
     padding: 10px;
 }
@@ -314,13 +316,13 @@ body {
 }
 
 .bordered-links a.active {
-    background-color: var(--secondary);
+    background-color: var(--greenlight);
     color: #fff;
-    border-color: var(--secondary) !important;
+    border-color: var(--greenlight) !important;
 }
 
 .bordered-links .active:hover {
-    background-color: var(--secondary);
+    background-color: var(--greenlight);
     color: #fff !important;
 }
 
@@ -708,7 +710,7 @@ footer {
     row-gap: 40px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid #dbdbdb;
+    border-top: 1px solid var(--grey);
     padding-top: 20px;
 }
 
