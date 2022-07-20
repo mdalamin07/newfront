@@ -36,21 +36,46 @@ $(document).ready(function () {
     bar.onclick = function () {
         navigation.classList.toggle('active')
     }
-   
+
     //bar script end
 
 
 
     // colored box ara start 
     const borderLink = document.querySelectorAll('.bordered-links a')
-    borderLink.forEach(function(a){
-        a.onclick= function(e){
+    borderLink.forEach(function (a) {
+        a.onclick = function (e) {
             e.preventDefault()
             a.classList.toggle('active')
         }
     })
-
     // colored box ara end 
+
+
+
+    // animation area start 
+    const animationWrappper = document.querySelector('.loading-animation-wrapper')
+    const tabsWrapper = document.querySelector('#banner-area .tabs-wrapper')
+
+    if (tabsWrapper.clientWidth > 0) {
+        animationWrappper.classList.add('d-none')
+    }
+    // animation area end 
+
+
+
+    // sticky header script start 
+    const html = document.querySelector('html');
+    const stickyHeader = document.querySelector('.stickyHeader');
+    window.onscroll = function () {
+        // console.log(html.scrollTop);
+        if (html.scrollTop >= 300) {
+            stickyHeader.classList.add('active')
+        } else {
+            stickyHeader.classList.remove('active')
+        }
+    }
+    // sticky header script end 
 
 
 

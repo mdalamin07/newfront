@@ -28,7 +28,7 @@
         <div class="middle-header p-3">
             <div class="container gap-3 d-flex justify-content-between flex-wrap">
                 <aside class="logo-area">
-                    <a href="#"><img src="./images/logo.png" alt=""></a>
+                    <a href="#"><img src="./images/full-logo.png" alt=""></a>
                 </aside>
                 <aside class="aside-right">
                     <select class="form-select" name="" id="">
@@ -102,6 +102,49 @@
             </div>
         </div>
     </header>
+    <header id="header" class="stickyHeader">
+        <div class="bottom-header">
+            <div class="container">
+                <ul class="navigation ">
+                    <li><a class="logo" href="#"><img src="./images/logo.png" alt=""></a></li>
+                    <li class="dropdown"><span>Nos Stations</span> <i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><span>Résidences Club </span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown"><span>Villages Club</span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Chalets</a></li>
+                    <li><a href="">Notre concept</a></li>
+                    <li class="dropdown"><span>Idées séjours</span><i class="fas fa-chevron-down"></i>
+                        <ul class="drop-menu">
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                            <li><a href="">item</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Promotions</a></li>
+                </ul>
+                <div class="bar">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
     <!-- heaer section end  -->
 
     <!-- banner area start -->
@@ -114,9 +157,10 @@
                             data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
                             aria-selected="true">Hiver</button>
                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
-                            type="button" role="tab" aria-controls="nav-profileété" aria-selected="false">été</button>
+                            type="button" role="tab" aria-controls="nav-profile" aria-selected="false">été</button>
                     </div>
                 </nav>
+
                 <div class="tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
                         tabindex="0">
@@ -130,7 +174,7 @@
                             </li>
                             <li class="d-flex">
                                 <div class="d-flex bordered-links align-items-center">
-                                    <a  href="#">Résidences Club</a>
+                                    <a href="#">Résidences Club</a>
                                     <a href="#">Villages Club</a>
                                     <a href="#">Chalets</a>
                                 </div>
@@ -140,26 +184,22 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="tab-pane fade" id="nav-profilenav-profileété" role="tabpanel" aria-labelledby="nav-profile-tab"
-                        tabindex="0"><ul class="hiver-element">
-                            <li class="d-flex align-items-center"><img src="./images/icons/location-icon.png" alt=""><a
-                                    href="#">Où allez-vous ? <i class="fas fa-chevron-down"></i></a></li>
-                            <li class="d-flex align-items-center"><img src="./images/icons/calendar-icon.png" alt=""><a
-                                    href="#">Quand ? <i class="fas fa-chevron-down"></i></a></li>
-                            <li class="d-flex align-items-center"><img src="./images/icons/double-user-icon.png"
-                                    alt=""><a href="#">Combien de vacanciers ?<i class="fas fa-chevron-down"></i></a>
-                            </li>
-                            <li class="d-flex">
-                                <div class="d-flex bordered-links align-items-center">
-                                    <a  href="#">Résidences Club</a>
-                                    <a href="#">Villages Club</a>
-                                    <a href="#">Chalets</a>
-                                </div>
-                                <button class="Rechercher-btn btn">Rechercher <i
-                                        class="fas fa-chevron-right"></i></button>
-                                </a>
-                            </li>
-                        </ul></div>
+                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab"
+                        tabindex="0">...</div>
+
+                    <div class="loading-animation-wrapper">
+                        <div class="element-wrapper">
+                            <div class="element"></div>
+                            <div class="element"></div>
+                        </div>
+                        <hr>
+                        <div class="tab-element-wrapper ">
+                            <div class="element"></div>
+                            <div class="element"></div>
+                            <div class="element"></div>
+                            <div class="element"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -464,8 +504,7 @@
                 <div class="promotion-image">
                     <img src="./images/home/le-promotion-image3.png" alt="">
                     <div class="hidden-area">
-                        <button class="btn commmon-btn">Voir nos brochures <i
-                                class="fas fa-chevron-right"></i></button>
+                        <button class="btn commmon-btn">Voir nos brochures <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
                 <div class="promotion-image">
