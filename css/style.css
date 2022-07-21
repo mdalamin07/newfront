@@ -946,6 +946,9 @@ footer {
     font-family: 'Montserrat', sans-serif;
     border-bottom: 1px solid black;
 }
+.rating_right_text a:hover{
+    color: #000;
+}
 .after_rating p{
     font-size: 14px;
     font-weight: normal;
@@ -998,7 +1001,82 @@ footer {
 }
 
 #etab_middle{
-    background-image: url(../images/background.png);
+    background-image: url(../images/etab_tarifs/background.png);
 }
-
+#etab_middle span {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 30px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    background-color: #fff;
+}
+#etab_middle span:hover{
+    background-color: #FCF1DA;
+}
+.etab_bottom_top {
+    padding: 15px;
+    border: 1px solid #EEEEEE;
+}
+.etab_bottom_top h5{
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 13px 20px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    background-color: var(--primary);
+}
+.etab_bottom_peragraph P{
+    font-size: 11.5px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.table_top span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 40px;
+    background-color: #000;
+    border-bottom: 5px solid var(--primary);
+}
+td .chambre {
+    color: #fff;
+    padding: 5px;
+    font-size: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    text-transform: uppercase;
+    margin: 10px 10px 0px 10px;
+    background-color: var(--primary);
+}
+.details{
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 15px;
+    text-decoration: underline;
+}
+.details:hover{
+    color: #000;
+}
+.table_inner_bottom {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+.table_head P {
+    font-size: 15px;
+    font-weight: 500;
+}
+footer{
+    margin-top: 90px;
+    border-top: 1px solid #EEEEEE;
+}
 /* Etab Tarif End Here */
