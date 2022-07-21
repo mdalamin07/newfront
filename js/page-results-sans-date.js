@@ -1,33 +1,5 @@
 $(document).ready(function () {
 
-    //carousel init start
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        dots: false,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 2
-            },
-            1199: {
-                items: 4
-            }
-        }
-    });
-
-    $('.owl-carousel.gallery-wrapper').owlCarousel({
-        loop: true,
-        margin: 0,
-        nav: true,
-        dots: false,
-        items: 2
-    })
-    //carousel init end
-
 
     //bar script start
     let bar = document.querySelectorAll('.bar');
@@ -38,7 +10,6 @@ $(document).ready(function () {
             // console.log(b.closest('.navigation'));
         }
     })
-
 
     //bar script end
 
@@ -90,50 +61,20 @@ $(document).ready(function () {
     //loading animation area end
 
 
+    // result button script for small screen start 
+    const arrowBtn = document.querySelector('.aside-wrapper .arrow-btn');
+    const closeBtn = document.querySelector('.aside-wrapper .left-aside .close-btn');
+    const leftAside = document.querySelector('.aside-wrapper .left-aside');
+
+    arrowBtn.onclick = function () {
+        leftAside.classList.toggle('active')
+    }
+    closeBtn.onclick = function () {
+        leftAside.classList.toggle('active')
+    }
+    // result button script for small screen end 
+
+
 
 
 })
-
-// Light Slider Start Here
-
-$ = jQuery;
-$( document ).ready(function() {
-  $v_slider_options = {
-      gallery: true,
-      item: 1,
-      loop:true,
-      slideMargin: 0,
-      thumbItem: 3,
-      vThumbWidth:260,
-      galleryMargin: 10,
-      thumbMargin: 10,
-      vertical: true
-  };
-  v_slider = $('#lightSliderVertical').lightSlider($v_slider_options);
-
-  /* Fancybox & lightSlider Sync - Bug Fix */
-  $selector = '#lightSlider li:not(".clone") a';
-  $selector += ',#lightSliderVertical li:not(".clone") a';
-  $().fancybox({
-    selector : $selector,
-    backFocus : false, //The most important options for sync bug fix
-    buttons : [ 
-      'slideShow',
-      'share',
-      'zoom',
-      'fullScreen',
-      'thumbs',
-      'download',
-      'close'
-    ]
-  });
-});
-
-
-$( window ).resize(function() {
-		slider.destroy();
-		h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
-});
- 
-
-// Light Slider End Here

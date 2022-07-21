@@ -13,8 +13,8 @@
 :root {
     --primary: #006f77;
     --secondary: #ff622c;
-    --greenlight:#9cdbbe;
-    --grey:var(--#dbdbdb);
+    --greenlight: #9cdbbe;
+    --grey: #dbdbdb;
 }
 
 p {
@@ -57,7 +57,54 @@ body {
     color: #fff;
 }
 
+
+/* loading animation area start  */
+.loading-animation-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #000000bd;
+    position: fixed;
+    display: flex;
+    top: 0;
+    color: #fff;
+    align-items: center;
+    left: 0;
+    z-index: 999;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-animation-wrapper img {
+    width: 200px;
+}
+.loading-animation-wrapper h2{
+    font-weight: 800;
+    font-size: 32px;
+    color: #fff;
+}
+
+/* loading animation area end  */
+
+
+
+
 /*  header start  */
+.stickyHeader {
+    position: fixed;
+    top: -240px;
+    z-index: 99;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.stickyHeader .logo img {
+    width: 100px;
+}
+
+.stickyHeader.active {
+    top: 0px;
+}
+
 #header .top-header {
     background-color: #ffe6aa;
     padding: 12px 0px;
@@ -152,6 +199,7 @@ body {
     background-color: #eeeeee;
     padding: 20px 0px;
     position: relative;
+    margin-top: -2px;
 }
 
 .bar {
@@ -162,6 +210,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 0;
 }
 
@@ -233,7 +282,7 @@ body {
 }
 
 .tabs-wrapper .nav-tabs {
-    border-bottom: 1px solid var(--grey);
+    border-bottom: 1px solid #dbdbdb;
 }
 
 .nav-tabs .nav-link {
@@ -241,13 +290,13 @@ body {
     font-weight: bold;
     color: #000;
     font-size: 18px;
-    border-bottom: 7px solid var(--grey);
+    border-bottom: 7px solid #dbdbdb;
 }
 
 .nav-tabs .nav-link.active {
     border: none;
     color: #000;
-    border-bottom: 7px solid var(--greenlight);
+    border-bottom: 7px solid #9cdbbe;
 
 }
 
@@ -270,7 +319,7 @@ body {
 }
 
 .tab-content .hiver-element li {
-    border-right: 1px solid var(--grey);
+    border-right: 1px solid #dbdbdb;
     display: block;
     padding: 10px;
 }
@@ -316,13 +365,13 @@ body {
 }
 
 .bordered-links a.active {
-    background-color: var(--greenlight);
+    background-color: var(--secondary);
     color: #fff;
-    border-color: var(--greenlight) !important;
+    border-color: var(--secondary) !important;
 }
 
 .bordered-links .active:hover {
-    background-color: var(--greenlight);
+    background-color: var(--secondary);
     color: #fff !important;
 }
 
@@ -386,6 +435,78 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
     margin-bottom: 0;
+}
+
+
+.skeleton-animation-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skeleton-animation-wrapper .element-wrapper {
+    display: flex;
+    column-gap: 20px;
+}
+
+.skeleton-animation-wrapper .tab-element-wrapper {
+    display: flex;
+    column-gap: 20px;
+    justify-content: space-evenly;
+    height: 100px;
+    align-items: center;
+}
+
+.skeleton-animation-wrapper .tab-element-wrapper .element {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    background-color: #dfdfdf;
+    position: relative;
+}
+
+.skeleton-animation-wrapper hr {
+    opacity: 1;
+    margin: 0;
+    background-color: #dfdfdf;
+    height: 2px;
+}
+
+.skeleton-animation-wrapper .element-wrapper .element {
+    max-width: 70px;
+    width: 100%;
+    height: 25px;
+    background-color: #dfdfdf;
+    margin: 8px 16px;
+    position: relative;
+}
+
+.element::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 100%;
+    background: linear-gradient(90deg, #ffffffb0, #ffffffb0);
+    position: absolute;
+    filter: blur(10px);
+    right: 100%;
+    animation-name: skeletonLoading;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes skeletonLoading {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: -5%;
+    }
 }
 
 /* banner area end */
@@ -610,7 +731,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background: rgb(0 0 0 / 31%);
+    background: rgb(0 0 0 / 80%);
     border-radius: 12px;
     transition: all .4s;
     visibility: hidden;
@@ -710,7 +831,7 @@ footer {
     row-gap: 40px;
     display: flex;
     flex-direction: column;
-    border-top: 1px solid var(--grey);
+    border-top: 1px solid #dbdbdb;
     padding-top: 20px;
 }
 
