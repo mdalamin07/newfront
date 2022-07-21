@@ -844,3 +844,161 @@ footer {
 }
 
 /* responsive area end  */
+
+/* Etab Tarif Start Here */
+
+
+/* Light Slider Start Here */
+.slider {
+    width: 100%;
+    margin: 30px auto;
+}
+#lightSlider {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+.slider li {
+    display: block;
+    float: left;
+    cursor:pointer;
+}
+.slider img {
+    display: block;
+    height: auto;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.lSAction>a {
+    display: none;
+}
+.lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li{
+  border-radius: 10px;
+}
+
+.lSSlideOuter .lSPager.lSGallery li.active:hover, .lSSlideOuter .lSPager.lSGallery li:hover {
+  border-radius: 10px;
+}
+.fancybox-image, .fancybox-spaceball {
+    border-radius: 10px;
+}
+
+/* Light Slider End Here */
+
+.etab_tarif_text {
+    margin-top: 30px;
+}
+.etab_tarif_text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.etab_tarif_text h2 {
+    font-family: 'BelyDisplay', sans-serif;
+    font-weight: 800;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.etab_tarif_text .rating-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    padding: 3px 5px;
+    color: #fff;
+    background-color: var(--primary);
+    margin-bottom: 0;
+}
+
+.etab_tarif_text i {
+    color: #ef9955;
+}
+
+.etab_tarif_text .bottom-rating {
+    border-radius: 7px;
+    background-color: var(--primary);
+    padding: 5px 10px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.etab_tarif_text .bottom-part h4 {
+    margin-bottom: 0;
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.etab_tarif_text b {
+    font-size: 14px;
+}
+.rating_right_text P {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+.rating_right_text a {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid black;
+}
+.after_rating p{
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+}
+.after_rating h5{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.after_rating span{
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+}
+.keyword span{
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: inline-block;
+    background-color: #FEFAEE;
+    border: 1px solid #FFE6AA;
+}
+.price h4{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+.price h5{
+    font-size: 18px;
+    font-weight: bold;
+}
+.price p{
+    font-size: 13px;
+    font-weight: 500;
+}
+.saison-btn {
+    background: var(--primary);
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+    color: #fff;
+}
+.saison-btn:hover{
+    color: #fff;
+}
+
+#etab_middle{
+    background-image: url(../images/background.png);
+}
+
+/* Etab Tarif End Here */
