@@ -107,9 +107,28 @@ $( document ).ready(function() {
       vThumbWidth:260,
       galleryMargin: 10,
       thumbMargin: 10,
-      vertical: true
+      vertical: true,
+      responsive : [
+        {
+          breakpoint:992,
+          settings: {
+            thumbItem: 4,
+            vThumbWidth:160,
+    
+          }
+        },
+        {
+          breakpoint:576,
+          settings: {
+            thumbItem: 6,
+            vThumbWidth:100,
+          }
+        }
+      ]
   };
   v_slider = $('#lightSliderVertical').lightSlider($v_slider_options);
+//   responsive
+
 
   /* Fancybox & lightSlider Sync - Bug Fix */
   $selector = '#lightSlider li:not(".clone") a';
@@ -127,13 +146,15 @@ $( document ).ready(function() {
       'close'
     ]
   });
+
+  
 });
 
 
-$( window ).resize(function() {
-		slider.destroy();
-		h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
-});
+// $( window ).resize(function() {
+// 		slider.destroy();
+// 		h_slider = $('#ocassions-slider').lightSlider(h_slider_options);
+// });
  
 
 // Light Slider End Here
